@@ -1,13 +1,17 @@
 # 요약
 
-1. [pre-commit](#pre-commit)을 초기화 해 주세요. `pre-commit install`. 설치 되어 있지 않다면 [설치](https://pre-commit.com/#installation) 해 주세요.
-2. go 모듈을 [초기화](#모듈-초기화하기) 해 주세요. `go mod init github.com/username/repo`
-3. cobra-cli [설치](#cobra-설치하기) 후 root 명령어를 초기화 해 주세요.
-4. `.goreleaser.yaml` 파일의 brews 키의 값들을 알맞게 수정 해 주세요.
+1. 저장소의 settings - Secrets and variables - Actions에서 Repository secret을 새로 만들어 주세요.
+   1. `release.yml`에서 PUBLISHER_TOKEN으로 지정되어 있는 토큰을 만드는 작업이에요.
+   2. 기본 세팅과 같은 이름인 PUBLISHER_TOKEN으로 새 토큰을 만드시거나
+   3. 혹은 원하시는 다른 이름으로 토큰을 만든 뒤, `release.yml`을 그 이름으로 수정 해 주세요.
+2. [pre-commit](#pre-commit)을 초기화 해 주세요. `pre-commit install`. 설치 되어 있지 않다면 [설치](https://pre-commit.com/#installation) 해 주세요.
+3. go 모듈을 [초기화](#모듈-초기화하기) 해 주세요. `go mod init github.com/username/repo`
+4. cobra-cli [설치](#cobra-설치하기) 후 root 명령어를 초기화 해 주세요.
+5. `.goreleaser.yaml` 파일의 brews 키의 값들을 알맞게 수정 해 주세요.
    1. 여기서 자신의 homebrew tap이 존재하지 않으면 하나 만드실 수 있어요.
    2. 깃허브 저장소에 `homebrew-username` [형식](https://docs.brew.sh/Taps#repository-naming-conventions-and-assumptions)으로 저장소를 만들고 [예시](https://github.com/mindulle/homebrew-mindulle)처럼 설정 해 주세요.
    3. 해당 예시의 README.md 파일을 제외한 모든 파일은 이 저장소의 goreleaser가 자동으로 생성했어요.
-5. 이 모든 과정에서 설정이 부족하거나 수정이 필요하다고 생각되시면 자유롭게 수정 해 주세요!
+6. 이 모든 과정에서 설정이 부족하거나 수정이 필요하다고 생각되시면 자유롭게 수정 해 주세요!
 
 # 설정하기
 
