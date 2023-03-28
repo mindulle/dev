@@ -1,9 +1,11 @@
 # 요약
 
+> 템플릿 사용 버튼을 누른 후, 차례대로 진행 해 주세요!
+
 1. 저장소의 settings - Secrets and variables - Actions에서 Repository secret을 새로 만들어 주세요.
-   1. `release.yml`에서 PUBLISHER_TOKEN으로 지정되어 있는 토큰을 만드는 작업이에요.
+   1. `release.yaml`에서 PUBLISHER_TOKEN으로 지정되어 있는 토큰을 만드는 작업이에요.
    2. 기본 세팅과 같은 이름인 PUBLISHER_TOKEN으로 새 토큰을 만드시거나
-   3. 혹은 원하시는 다른 이름으로 토큰을 만든 뒤, `release.yml`을 그 이름으로 수정 해 주세요.
+   3. 혹은 원하시는 다른 이름으로 토큰을 만든 뒤, `release.yaml`을 그 이름으로 수정 해 주세요.
 2. [pre-commit](#pre-commit)을 초기화 해 주세요. `pre-commit install`. 설치 되어 있지 않다면 [설치](https://pre-commit.com/#installation) 해 주세요.
 3. go 모듈을 [초기화](#모듈-초기화하기) 해 주세요. `go mod init github.com/username/repo`
 4. cobra-cli [설치](#cobra-설치하기) 후 root 명령어를 초기화 해 주세요.
