@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/mindulle/dev/compare/v1.0.0...v1.1.0) (2023-03-28)
+
+
+### Features
+
+* add test command ([bb7db32](https://github.com/mindulle/dev/commit/bb7db32c9bb2dbe731d28284aef4fdb3a9a2c06d))
+
 # 1.0.0 (2023-03-28)
 
 ### Features
