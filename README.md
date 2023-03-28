@@ -5,6 +5,7 @@
 1. go 모듈을 초기화 해 주세요. `go mod init github.com/username/repo`
 2. `.cobra.yaml` 파일의 정보를 자신에게 맞게 수정 해 주세요.
 3. cobra-cli 설치 후 root 명령어를 초기화 해 주세요. `cobra-cli init`
+4.
 
 # 명령어 만들기
 
