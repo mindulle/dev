@@ -1,0 +1,5 @@
+extractMethod:
+  problem: "./Problem/extract-method.ts.md"
+  solution: "./Solution/extract-method.ts.md"
+  how-to: "./How to/extract-method.md"
+  description: https://refactoring.guru/extract-method

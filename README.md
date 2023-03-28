@@ -124,6 +124,7 @@ func main () {
 | :------------------------------------------------------: | :----------------------------------------------: |
 | [Bubble Tea](https://github.com/charmbracelet/bubbletea) |   Functional 하고 Stateful한 터미널 앱 만들기    |
 |  [Lip gloss](https://github.com/charmbracelet/lipgloss)  | 좋은 터미널 레이아웃을 구성하기 위한 스타일 정의 |
+|   [glamour](https://github.com/charmbracelet/glamour)    |  CLI 프로그램용 스타일시트 기반 마크다운 렌더러  |
 
 ## 자동화
 

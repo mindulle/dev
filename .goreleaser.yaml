@@ -35,7 +35,7 @@ universal_binaries:
 brews:
   - # Name template of the recipe
     # Default to project name
-    name: cli-template-for-human
+    name: dev
 
     # Your app's homepage.
     # Default is empty.
