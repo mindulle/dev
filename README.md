@@ -106,6 +106,6 @@ go get -u -v "github.com/user/module"
 - 기본적으로 `.releaserc.yaml`에 의해 이 저장소는 태깅 되고 있어요.
 - 어느정도 로컬 테스트가 완료되면 `git tag tagName (optionalCommitHash)` 명령으로 tag를 붙인 뒤
 - `git push --tags` 명령으로 로컬에서 생성한 tag를 저장소에 push 할 수 있어요.
-- 자동으로 생성된 tag와 달리 로컬에서 개발자가 생성한 tag에는 `release.yml`파일에 설정 된 Github Action이 동작해요.
+- 자동으로 생성된 tag와 달리 로컬에서 개발자가 생성한 tag에는 `release.yaml`파일에 설정 된 Github Action이 동작해요.
 - 그 결과, 자동으로 goReleaser가 여태까지 작성한 CLI 프로그램을 나의 Homebrew tap에 배포해 준답니다!
 - 그 이후에는 tap이 [예시 저장소](https://github.com/mindulle/homebrew-mindulle)와 같은 상태가 되며 brew가 설치된 머신에서라면 만든 명령어를 바로 사용 할 수 있게 된답니다.
