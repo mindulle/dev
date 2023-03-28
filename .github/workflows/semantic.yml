@@ -19,5 +19,5 @@ jobs:
         run: go mod download
       - name: Semantic tagging
         env:
-          GITHUB_TOKEN: ${{ secrets.UNIVERSAL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx -p @semantic-release/changelog -p @semantic-release/exec -p @semantic-release/git semantic-release
