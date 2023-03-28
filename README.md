@@ -52,10 +52,6 @@ go install github.com/spf13/cobra-cli@latest
 cobra-cli init
 ```
 
-### 저장소 내의 `cobra.yaml` 수정하기
-
-- 저자와 라이선스를 자신이 원하는 형식으로 수정 해 주세요.
-
 ### 명령어 추가하기
 
 > `cobra-cli add command-name` 으로 명령어를 추가해요.
