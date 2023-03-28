@@ -104,3 +104,12 @@ go get -u -v "github.com/user/module"
 | `.pre-commit-config.yaml`        | [pre-commit](https://pre-commit.com/) 설정 파일.<br/> `pre-commit install`로 git hook을 설치 할 수 있고, `pre-commit sample-config`로 이 파일을 생성 할 수 있습니다.                                                                                                                                                                                                  |
 | `.gorelaser.yaml`                | [GoReleaser](https://goreleaser.com/) 설정 파일. `goreleaser init` 명령어로 생성합니다. <br>컴파일, 릴리즈 노트 생성, Homebrew Formulae를 생성하고 나의 Homebrew Tap 저장소에 배포하는 작업을 자동화 하는 데 사용됩니다.                                                                                                                                              |
 | `.github/workflows/release.yml`. | Github Action을 이용해 [GoReleaser의 작업을 자동화](https://goreleaser.com/ci/actions/?h=github+ac) 하기 위한 설정 파일. <br/> `Homebrew-tapName`으로 [자신](https://github.com/mindulle/homebrew-mindulle)의 [brew tap](https://docs.brew.sh/Taps)을 만들어 두었다면, 이 템플릿에서 만든 명령어를 자신의 tap에 자동 배포해주는 Github Action을 위한 설정 파일이에요. |
+
+# 배포하기
+
+- 기본적으로 `.releaserc.yaml`에 의해 이 저장소는 태깅 되고 있어요.
+- 어느정도 로컬 테스트가 완료되면 `git tag tagName (optionalCommitHash)` 명령으로 tag를 붙인 뒤
+- `git push --tags` 명령으로 로컬에서 생성한 tag를 저장소에 push 할 수 있어요.
+- 자동으로 생성된 tag와 달리 로컬에서 개발자가 생성한 tag에는 `release.yml`파일에 설정 된 Github Action이 동작해요.
+- 그 결과, 자동으로 goReleaser가 여태까지 작성한 CLI 프로그램을 나의 Homebrew tap에 배포해 준답니다!
+- 그 이후에는 tap이 [예시 저장소](https://github.com/mindulle/homebrew-mindulle)와 같은 상태가 되며 brew가 설치된 머신에서라면 만든 명령어를 바로 사용 할 수 있게 된답니다.
