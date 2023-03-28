@@ -1,4 +1,5 @@
 preset: angular
+repositoryUrl: https://github.com/mindulle/dev.git
 branches:
   - main
 
